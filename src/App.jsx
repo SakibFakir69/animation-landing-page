@@ -1,16 +1,14 @@
 import React from 'react'
+import Hero from './components/Hero'
 
 function App() {
   return (
     <div>
-      <main className="p-10">
-        <h1 className="text-4xl font-general text-violet-300 ">
+      <main className="relative min-h-screen w-screen overflow-x-hidden">
 
-          Welcome to award-winning website
-        </h1>
-        <p className='font-circular-web'>font</p>
-        <h1 className="font-robert-regular text-2xl">Regular Font</h1>
-<h1 className="font-robert-medium text-2xl ">Medium Font</h1>
+        <Hero/>
+        <section className='z-0  min-h-screen  bg-blue-500'/>
+        
 
       </main>
     </div>
