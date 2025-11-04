@@ -109,17 +109,20 @@ function Navbar() {
             </div>
 
 
-            <div className='flex  h-full items-center'>
+            <div className='flex  h-full items-center gap-x-5'>
 
-                <div className='hidden md:block'>
-                    {
-                        navItems.map((item)=>(
-                            <a key={item} href={`#${item.toLowerCase()}`} className='nav-hover-btn'>{item}</a>
+                <div className="hidden md:flex gap-x-3">
+  {navItems.map((item) => (
+    <a
+      key={item}
+      href={`#${item.toLowerCase()}`}
+      className="nav-hover-btn"
+    >
+      {item}
+    </a>
+  ))}
+</div>
 
-                        ))
-                    }
-
-                </div>
 
                 <button onClick={toggleAudioIndicator} className='ml-10 flex items-center  space-x-0.5'>
 
